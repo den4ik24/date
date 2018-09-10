@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/clock">
+	
+	<TextView
+		android:text="Определение времени до заданного"
+		android:layout_width="match_parent"
+		android:layout_height="38.0dp"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:id="@+id/name"
+		android:textStyle="normal|bold|italic"
+		android:textColor="#ff1a237e"
+		android:textAlignment="center"
+		android:textSize="20dp" />
+	<TextView
+		android:text="Введите нужную дату"
+		android:textAlignment="center"
+		android:textColor="#ff1a237e"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/name"
+		android:id="@+id/date" />
+	<DatePicker
+		android:layout_width="match_parent"
+		android:layout_below="@id/date"
+		android:id="@+id/datePicker"
+		android:freezesText="true"
+		android:layout_height="wrap_content"
+		android:datePickerMode="spinner" 
+		 />
+	<Button
+		android:text="ОСТАЛОСЬ: "
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/datePicker"
+		android:id="@+id/remain"
+		android:textColor="#ff6200ea"
+		android:layout_marginTop="12dp"
+		android:shadowColor="#ff4e342e"
+		android:textColorHighlight="#ff1a237e"
+		android:textColorHint="#ff7e57c2"
+		android:textColorLink="#ff7c4dff" />
+	<TextView
+		android:text="Дней"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/remain"
+		android:id="@+id/days"
+		android:freezesText="true"
+		android:textColor="#ff004d40"
+		android:textSize="20dp"
+		android:layout_marginTop="15.0dp" />
+	<TextView
+		android:text="Часов"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/days"
+		android:id="@+id/hours"
+		android:freezesText="true"
+		android:textColor="#ff004d40"
+		android:textSize="15dp" />
+	<TextView
+		android:text="Минут"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/hours"
+		android:id="@+id/minutes"
+		android:freezesText="true"
+		android:textColor="#ff004d40"
+		android:textSize="15dp" />
+	<TextView
+		android:text="Секунд"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/minutes"
+		android:id="@+id/seconds"
+		android:freezesText="true"
+		android:textColor="#ff004d40"
+		android:textSize="15dp" />
+	</RelativeLayout>
