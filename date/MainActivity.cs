@@ -49,7 +49,8 @@ namespace date
                 days.Text = "Дней : " + span.TotalDays.ToString();
                 hours.Text = "Часов : " + span.TotalHours.ToString();
                 minutes.Text = "Минут : " + span.TotalMinutes.ToString();
-                seconds.Text = "Секунд : " + span.TotalSeconds.ToString();
+                seconds.Text = "Секунд: " + span.TotalSeconds.ToString();
+                
             }
             catch(Exception)
             {
@@ -59,5 +60,6 @@ namespace date
 
         // Unhandled Exception: Java.Lang.RuntimeException: <Timeout exceeded getting exception details>
         // I/Process (12702): Sending signal. PID: 12702 SIG: 9
+        //ЗАРАБОТАЛО !!))
     }
 }
